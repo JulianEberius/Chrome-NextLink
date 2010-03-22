@@ -1,0 +1,1 @@
+Simple Chrome extension that looks for rel="next" links and displays a page icon (in the adress bar) if found. Then you can hit cmd+right-arrow (should be win+right-arrow on windows) to get to the next page.

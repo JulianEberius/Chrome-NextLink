@@ -1,0 +1,21 @@
+{
+  "name": "Chrome-NextLink",
+  "version": "0.1",
+  "description": "Adds keyboard shortcuts for rel='next' and 'back' links to Chrome",
+  "background_page": "background.html",
+  "page_action": {
+    "default_icon": "next.png",
+    "default_title": "Next & previous links found"
+  },
+  "content_scripts" : [
+     {
+       "matches" : [
+         "http://*/*",
+         "https://*/*"
+       ],
+       "js" : ["content_script.js"],
+       "run_at" : "document_idle",
+       "all_frames" : false
+     }
+   ]
+}
